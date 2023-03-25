@@ -1,0 +1,32 @@
+.chapter
+{
+    vertical-align: middle;
+    min-height: 50px;
+    min-width: 200px;
+    font-size: 1rem;
+}
+
+
+.playSym
+{
+    margin-left: 10px;
+}
+
+.chapterTitle
+{
+    font-size: 1rem;
+    margin-left: 5px;
+    align-items: center;
+}
+
+
+.chapterContent
+{
+    margin-top: 10px;
+}
+
+.chapterContent .chapterDuration
+{
+    float: right;
+    margin-right: 5px;  
+}

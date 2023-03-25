@@ -1,0 +1,29 @@
+.home
+{
+    margin-right: 50px;
+}
+
+@media (max-width)
+{
+    .home
+    {
+        margin-right: 10px;
+    }
+}
+
+.homeDesc
+{
+    font-size: 12px;
+}
+
+.course_desc
+{
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+li span{
+    position: relative;
+    margin-left: -20px;
+    font-size: 14px;
+}
