@@ -1,0 +1,28 @@
+{
+    courseId1:
+    {
+        chapters:
+        [
+            chapterID1:
+            {
+                finished: false/true
+                lastSecondViewed: 456
+            }
+            chapterID:2
+            {
+                finished: false/true
+                lastSecondViewed: 111
+
+            }
+            .
+            . 
+            .
+        ]
+
+    }
+
+    courseID2:
+    {
+        
+    }
+}

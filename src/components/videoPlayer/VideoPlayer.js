@@ -5,11 +5,10 @@ import "./VideoPlayer.css"
 import { Buffer } from 'buffer'
 
 
+
 export class VideoPlayer extends React.Component{
-
-
     state = {
-    url: JSON.stringify(this.props.parentState.url),
+    url: this.props.parentState.url,
     pip: false,
     playing: true,
     controls: false,
@@ -21,7 +20,6 @@ export class VideoPlayer extends React.Component{
     duration: 0,
     playbackRate: 1.0,
     loop: false,
-    myname: "Tomer"
   }
 
     load = url => {
@@ -113,6 +111,7 @@ export class VideoPlayer extends React.Component{
 
   handleProgress = state => {
     console.log('onProgress', state)
+
     // We only want to update time slider if we are not currently seeking
     if (!this.state.seeking) {
       this.setState(state)
@@ -143,27 +142,13 @@ export class VideoPlayer extends React.Component{
   }
 
 
-  onclick = () =>
-  {
-    console.log("000000000000000000000000")
-    let url = 'https://interviews.bigvu.tv/course/list';
-    let username = 'bigvu';
-    let password = 'interview';
-    const base64encodedData = Buffer.from(`${username}:${password}`).toString('base64');
-
-  fetch(url, {method:'GET', headers: {'Content-Type': 'application/json','Authorization': `Basic ${base64encodedData}`}})
-    .then(res=>res.json())
-    .then(json => {
-        this.setState({
-            isLoaded:true,
-            items:json,
-        })
-    })
-  }
+  onclick = () =>{ console.log("click")}
+  
 
   render () {
     const { url, playing, controls, light, volume, muted, loop, played, loaded, duration, playbackRate, pip } = this.state
     const SEPARATOR = ' · '
+    console.log("player: "+ this.props.parentState.url)
     return (
       <div className='rounded'>
           <div>
@@ -172,7 +157,7 @@ export class VideoPlayer extends React.Component{
               className='react-player'
               width='100%'
               height='100%'
-              url={this.state.url.toString()}
+              url={url}
               pip={pip}
               playing={playing}
               controls={true}
@@ -196,11 +181,7 @@ export class VideoPlayer extends React.Component{
               onProgress={this.handleProgress}
               onDuration={this.handleDuration}
             />
-          </div>
 
-          <div>
-            <button className='btn btn-primary' onClick={this.onclick}>GET</button>
-            <h1>{this.state.myname}</h1>
           </div>
           
         </div>

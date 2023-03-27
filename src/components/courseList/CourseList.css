@@ -23,6 +23,7 @@
 .chapterContent
 {
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .chapterContent .chapterDuration
