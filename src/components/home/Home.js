@@ -1,7 +1,6 @@
 import React from 'react'
-import arrowIcon from "./arrowIcon.png"
+import arrowIcon from "./arrowicon.png"
 import finishIcon from "./finishIcon.png"
-import vector12 from "./vector12.png"
 import "./home.css"
 import axios from 'axios'
 import { Link } from 'react-router-dom'
