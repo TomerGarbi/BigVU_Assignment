@@ -1,35 +1,50 @@
-.home
-{
-    margin-right: 50px;
-}
 
-@media (max-width)
-{
-    .home
-    {
-        margin-right: 10px;
+@media only screen and (min-width: 1000px) {
+
+    .home {
+        margin-right: 50px;
     }
+    
+    .homeDesc {
+        font-size: 16px;
+    }
+
+    .course_desc {
+        margin-top: 50px;
+        font-size: 16px;
+    }
+
+    li span {
+        position: relative;
+        margin-left: -20px;
+        font-size: 14px;
+    }
+    
 }
 
-.homeDesc
-{
-    font-size: 12px;
-}
 
-.course_desc
-{
-    margin-top: 50px;
-    font-size: 16px;
-}
+@media only screen and (max-width: 1000px) {
+    .homeDesc {
+        font-size: 12px;
+    }
 
-li span{
-    position: relative;
-    margin-left: -20px;
-    font-size: 14px;
-}
+    .course_desc {
+        margin-top: 50px;
+        font-size: 16px;
+    }
+    li
+    {
+        font-size: 12px;
+    }
+    li span {
+        position: relative;
+        margin-left: -20px;
+        font-size: 14px;
+    }
 
-.numberOfVideos
-{
-    background-color: "#ff0000";
-    text-emphasis-color: "#00ff00";
+    .numberOfVideos {
+        background-color: "#ff0000";
+        text-emphasis-color: "#00ff00";
+    }
+    
 }
